@@ -190,7 +190,9 @@ public class BigqueryUtils {
 
     JobReference jobreference = new JobReference();
     jobreference.setProjectId(projectId);
-
+    
+    jobreference.set("what", "me");
+    
     Job newJob = new Job();
     newJob.setConfiguration(jobconfiguration);
     newJob.setJobReference(jobreference);
